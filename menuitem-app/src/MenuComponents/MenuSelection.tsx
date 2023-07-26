@@ -121,13 +121,14 @@ const MenuSelection: React.FC = () => {
 
   const checkIsOrderSent = async (orderSuccess: boolean, response: OrderType) => {
     if (orderSuccess) {
+      let orderNumber = 'Order #' + response.orderNumber
+      let qty = ' - Item Count = ' + response.itemCount
       let successMessage = ' placed succesfully! You will be charged: $' + getTotalPrice()
-      let orderNumber = response.orderNumber
-      let message = 'Order #' + orderNumber + successMessage
+      let message = orderNumber + qty + successMessage
         toast.success(<div>{message}</div>, {
           onClose: () => {
             setTimeout(() => {
-            }, 2000)
+            }, 5000)
           }
         })
      } else {
