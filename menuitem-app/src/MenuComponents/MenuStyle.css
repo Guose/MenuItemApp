@@ -45,19 +45,48 @@
   .menu-item {
     display: flex;
     flex-direction: column;
-    background-color: #f0f0f0;
-    padding: 20px;
+    background-color: #e5fd5e;
+    margin-top: 15px;
+    padding: 15px;
     border-radius: 5px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     width: 200px;
+    height: 80px;
     text-align: center;
-    border-color: black;
+    border: solid #007bff;
     cursor: pointer;
+  }
+  .menu-item:hover {
+    background-color: #b2e400;
+  }
+
+  #myDIV {
+    border: 1px solid black;
+    width: 400px;
+    height: 100px;
+    animation: mymove 5s infinite;
+  }
+  
+  @keyframes mymove {
+    50% {
+      font-size: 22pt;
+      font-weight: bold;
+      font-style: oblique;
+      color: red;
+    }
+  }
+
+  .menu-item a {
+    margin: 0px;
+    font-size: 14pt;
+    color: #b2e400;;
+    animation: mymove 5s infinite;
   }
   
   .menu-item h3 {
     margin: 0;
-    font-size: 18px;
+    font-size: 16pt;
+    
   }
   
   .menu-item p {
@@ -83,6 +112,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 250px;
+  height: 210px;
 }
 
   /* Style the images inside the category button containers */
@@ -96,6 +127,11 @@
   cursor: pointer;
   border: 1px solid lightgray;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.category-image:hover {
+  width: 240px;
+  height: 200px;
 }
 
   /* Style the active button with a colored border */
@@ -145,6 +181,5 @@
   }
   
   #select-item-text {
-    margin-top: 10px;
-    font-size: 8pt;
+    font-size: 9pt;
   }

@@ -10,12 +10,11 @@ interface MenuItemProps {
 const MenuItem: React.FC<MenuItemProps> = ({ item, quantity }) => {  
   return (
 
-    <div>
-      
+    <div>      
       <div className='menu-item'>
+        <a>*Order*</a>
         <h3>{item.itemName}</h3>
-        <p>Price: ${item.price}</p>
-        
+        <p>Price: ${item.price}</p>        
       </div>
       <a id='select-item-text'>Select to add to order</a>
     </div>

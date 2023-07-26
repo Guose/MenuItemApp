@@ -107,7 +107,7 @@ const MenuSelection: React.FC = () => {
       }
       const orderResponse: OrderType = response.data.data
       // Do something with the orderResponse, like displaying a success message or updating UI
-      checkIsOrderSent(orderSent, orderResponse)
+      await checkIsOrderSent(orderSent, orderResponse)
 
       // After successful submission, reset the orderItems state to an empty array
       setOrderItems([])
@@ -121,13 +121,13 @@ const MenuSelection: React.FC = () => {
 
   const checkIsOrderSent = async (orderSuccess: boolean, response: OrderType) => {
     if (orderSuccess) {
-      let orderNumber = 'Order #' + response.orderNumber
+      let orderNumber = 'Submission in progress... \nOrder #' + response.orderNumber
       let qty = ' - Item Count = ' + response.itemCount
-      let successMessage = ' placed succesfully! You will be charged: $' + getTotalPrice()
+      let successMessage = ', was placed succesfully! You will be charged: $' + getTotalPrice()
       let message = orderNumber + qty + successMessage
         toast.success(<div>{message}</div>, {
           onClose: () => {
-            setTimeout(() => {
+            setTimeout(() => {              
             }, 5000)
           }
         })
