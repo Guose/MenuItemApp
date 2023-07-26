@@ -1,0 +1,81 @@
+/* Styling for the order summary container */
+.order-summary-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Styling for the Order Summary heading */
+.order-summary-heading {
+  text-align: center;
+}
+
+/* Styling for the order summary table */
+.order-summary-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+/* Styling for table headings */
+.order-summary-table th {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Styling for table cells */
+.order-summary-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.order-summary-container ul {
+  list-style: none;
+  padding: 10px;
+}
+
+/* Styling for the order item container */
+.order-item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Styling for the edit button */
+.edit-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 10px;
+  align-self: flex-end;
+}
+
+/* Styling for the control buttons */
+.control-buttons {
+  display: flex;
+  align-items: center;
+}
+
+/* Style the control buttons individually */
+.control-buttons button {
+  margin-left: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+#remove-item {
+  background-color: red;
+}

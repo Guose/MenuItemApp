@@ -1,0 +1,150 @@
+/* Styling for the menu selection container */
+.menu-selection-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  /* Styling for the menu selection title */
+  .menu-selection-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Styling for the total price */
+  .total-price {
+    font-size: 20px;
+    margin-top: 25px;
+  }
+  
+  /* Styling for the loading message */
+  .loading-message {
+    font-size: 18px;
+    color: #6c757d;
+  }
+  
+  /* Styling for the place order button */
+  .place-order-button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 18px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .place-order-button:hover {
+    background-color: #218838;
+  }
+
+  /* Styling for each menu item */
+  .menu-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    text-align: center;
+    border-color: black;
+    cursor: pointer;
+  }
+  
+  .menu-item h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .menu-item p {
+    margin: 5px 0;
+  }
+
+/* Styling for the menu list container */
+.menu-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  /* Styling for the category buttons */
+  .category-buttons {
+    display: flex;
+    gap: 60px;
+  }
+
+  /* Styling for the category button containers */
+.category-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  /* Style the images inside the category button containers */
+.category-image {
+  width: 200px;
+  height: 160px;
+  background-size: cover;
+  padding: 5px;
+  background-position: center;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+  /* Style the active button with a colored border */
+.category-image.active-button {
+  background-color: lightcoral;
+  border-color: rgb(218, 82, 33);
+}
+
+/* Style the category labels */
+.category-label {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+  /* Styling for the menu navigation buttons */
+.menu-nav-buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/* Style the navigation buttons */
+.menu-nav-buttons button {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #007bff;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 5px;
+  border: none;
+  outline: none;
+}
+  
+  .menu-list-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styling for the current item container */
+  .current-item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #select-item-text {
+    margin-top: 10px;
+    font-size: 8pt;
+  }
