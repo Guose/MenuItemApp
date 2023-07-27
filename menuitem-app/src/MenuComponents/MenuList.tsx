@@ -66,7 +66,7 @@ const MenuList: React.FC<MenuListProps> = ({ menuItems, onAddToOrder, itemQuanti
       <div className='menu-nav-buttons'>
         <button onClick={handlePrevItem}>&lt;</button>
 
-        {filteredMenuItems.length === 0 ? ( <p>No items available in this category.</p> ) : (
+        {filteredMenuItems.length === 0 ? ( <p>No items available in this category. Please make a Menu Selection</p> ) : (
           <div className='current-item-container' key={filteredMenuItems[currentItemIndex].id} onClick={handleClickMenuItem}>
             <MenuItem item={filteredMenuItems[currentItemIndex]} quantity={itemQuantities[filteredMenuItems[currentItemIndex].id] || 0} />
           </div>

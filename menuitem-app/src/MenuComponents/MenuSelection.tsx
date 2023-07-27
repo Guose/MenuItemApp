@@ -17,7 +17,7 @@ const MenuSelection: React.FC = () => {
 
   // Function to fetch menu items from API
   useEffect(() => {
-    axios.get('http://localhost:3001/menu')
+    axios.get('http://192.168.1.10:3001/menu')
         .then((response) => {
             console.log('Menu Items: ', response.data)
             setMenuItems(response.data)   
@@ -100,7 +100,7 @@ const MenuSelection: React.FC = () => {
 
       console.log(payload)
 
-      const response = await axios.post('http://localhost:3001/order', payload)
+      const response = await axios.post('http://192.168.1.10:3001/order', payload)
       if (response.status >= 200 && response.status < 300) {
         console.log(response.data)
         orderSent = true

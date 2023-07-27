@@ -136,8 +136,7 @@
 
   /* Style the active button with a colored border */
 .category-image.active-button {
-  background-color: lightcoral;
-  border-color: rgb(218, 82, 33);
+  background-color: rgb(247, 9, 41);
 }
 
 /* Style the category labels */
